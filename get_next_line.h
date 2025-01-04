@@ -6,7 +6,7 @@
 /*   By: zhassna <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 01:46:04 by zhassna           #+#    #+#             */
-/*   Updated: 2025/01/01 10:21:06 by zhassna          ###   ########.fr       */
+/*   Updated: 2025/01/04 13:49:18 by zhassna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 # define GET_NEXT_LINE_H
 
 # include <unistd.h>
-//# include <stdio.h>
+# include <stdio.h>
 # include <fcntl.h>
 # include <stdlib.h>
-//# define BUFFER_SIZE 53
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 5
+# endif
 
 char	*get_next_line(int fd);
 char	*ft_get_next(char *buf);
