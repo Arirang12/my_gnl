@@ -6,11 +6,11 @@
 /*   By: zhassna <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/01 00:45:15 by zhassna           #+#    #+#             */
-/*   Updated: 2025/01/04 12:03:46 by zhassna          ###   ########.fr       */
+/*   Updated: 2025/01/04 13:45:53 by zhassna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*ft_get_line(char *buf)
 {
