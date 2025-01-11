@@ -6,7 +6,7 @@
 /*   By: zhassna <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/27 01:46:04 by zhassna           #+#    #+#             */
-/*   Updated: 2025/01/04 13:49:18 by zhassna          ###   ########.fr       */
+/*   Updated: 2025/01/07 21:44:02 by zhassna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <fcntl.h>
 # include <stdlib.h>
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 5
+#  define BUFFER_SIZE 42000
 # endif
 
 char	*get_next_line(int fd);
@@ -26,7 +26,7 @@ char	*ft_get_next(char *buf);
 char	*ft_get_line(char *buf);
 char	*ft_read_file(int fd, char *reminder);
 
-char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strjoin(char *s1, char *s2);
 int		ft_strlen(const char *s1);
 char	*ft_search_nl(char *str, char c);
 void	ft_bzero(void *s, size_t n);

@@ -6,16 +6,15 @@
 /*   By: zhassna <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/01 01:03:10 by zhassna           #+#    #+#             */
-/*   Updated: 2025/01/04 12:03:25 by zhassna          ###   ########.fr       */
+/*   Updated: 2025/01/07 21:47:32 by zhassna          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char *s1, char *s2)
 {
 	char	*res;
-	char	*tmp;
 	int		total;
 	int		i;
 	int		j;
@@ -34,8 +33,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	while (s2[j])
 		res[i++] = s2[j++];
 	res[total] = '\0';
-	tmp = (char *)s1;
-	free (tmp);
+	free(s1);
 	return (res);
 }
 
